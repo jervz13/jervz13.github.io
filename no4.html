@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Question</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .yes {
+            padding: 40px 80px; /* Increased padding for Yes button */
+            font-size: 24px; /* Increased font size for Yes button */
+            background-color: #ffcccc;
+        }
+        .no {
+            padding: 10px 20px; /* Smaller padding for No button */
+            font-size: 16px; /* Smaller font size for No button */
+            background-color: #ccccff;
+        }
+        button:hover {
+            background-color: #e0e0e0;
+        }
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 300px;
+            display: none; /* Initially hidden */
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Space between image and heading */
+        }
+    </style>
+</head>
+<body>
+<img src="bonito.jpg.jpg"
+width="200px" height="300px">
+    <h1>Can you be my valentine?</h1>
+    <button class="yes" onclick="showYesTable()">Yes</button>
+    <button class="no" onclick="redirectToNoPage()">No</button>
+
+    <table id="yesTable">
+        <tr>
+            <th>Response</th>
+        </tr>
+        <tr>
+            <td>Yay! ❤️ I'm so happy!</td>
+        </tr>
+    </table>
+
+    <script>
+        function showYesTable() {
+            document.getElementById('yesTable').style.display = 'table';
+        }
+
+        function redirectToNoPage() {
+            window.location.href = 'no4.html'; // Redirect to the No page
+        }
+    </script>
+
+</body>
+</html>
